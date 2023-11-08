@@ -23,7 +23,9 @@ This is because we load the data once, $O(n)$, and perform $m$ binary searches, 
 $$O(mn)$$
 This is because we iterate through the entire log file $m$ times, and we know that iterating through the entire log file takes $O(n)$. 
 
-Now, is it true we can still find the most active cookie for one date while loading the data? Absolutely. However, I believe the code quality will suffer because of that (juggling loading data and finding the most active cookie). Though it would be a simple fix, I decided not to so that other programmers would have an easy time reading and understanding the code (after all, I used OOP for the purpose of making it easier to understand). 
+Now, is it true we can still find the most active cookie for one date while loading the data? Absolutely. However, I believe the code quality will suffer because of that (juggling loading data and finding the most active cookie). Though it would be a simple fix, I decided not to so that other programmers would have an easy time reading and understanding the code (after all, I used OOP to make it easier to understand). 
+
+Note that I included a file called `sorted_mega_tester.csv`, which is a file that resembles the original cookie log data but is extended to 1000 rows. Though I did not include any tests for this file in my `most_active_cookie_test.py` (My tests only utilize the original cookie log file), I used it to test my program on the side and it seemed to work! Please feel free to utilize `most_active_cookie_test.py` however you see fit.
 
 That is my explanation for the program I have written! Thank you so much :)
 
